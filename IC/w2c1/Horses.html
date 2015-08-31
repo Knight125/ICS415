@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kara's Cool Website</title>
+</head>
+<table border = "1" style="width:100%">
+  <tr>
+    <td style = 'font-size: 40px;' align = "center"><strong>Kara's Cool Website</strong></td>
+  </tr>
+  <tr>
+    <td><nav><a href = "Homepage.html">Home </a>&nbsp;<a href = "Horses.html">Horses</a></nav></td>
+  </tr>
+</table>
+
+<table border = "1" style="width:100%">
+  <tr>
+    <th style =' width: 25%; font-weight:normal;vertical-align:top' align = "top"><strong>Horses</strong><br><br><summary>Drag
+      and drop the horse picture into the box</summary></th>
+    <th style =' width: 75%;' align = "left"><h3>Horses Page</h3>
+      <style>
+        #div1 {width:150px;height:150px;padding:24px;border:1px solid #aaaaaa;}
+      </style>
+      <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+      </script>
+
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="drag1" src="horse.jpg" draggable="true" ondragstart="drag(event)" width="150" height="150">
+      <td>
+      Yay a box drawn by canvas:<br>
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+
+      <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        // Create gradient
+        var grd = ctx.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,150,80);
+      </script>
+      </td>
+
+
+
+  </tr>
+</table>
+
+<table border = "1" style="width:100%">
+  <tr>
+    <td align="center">Copyright (C) Kara Knight</td>
+  </tr>
+</table>
+</body>
+</html>
