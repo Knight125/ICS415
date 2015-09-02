@@ -1,0 +1,51 @@
+.heading
+{
+  border-style:ridge;
+  text-align:center;
+  font-weight: bold;
+  font-size:40px;
+}
+
+body
+{
+  background-color: #c3fdff;
+}
+.navbar
+{
+  border-style:ridge;
+}
+
+.leftSide
+{
+  border-style:ridge;
+  width:25%;
+  margin:0;
+  padding:0;
+  float:left;
+  height: 730px;
+}
+
+.semiHeading
+{
+  font-weight:bold;
+
+}
+
+.rightSide
+{
+  width:74%;
+  border-style:ridge;
+  margin:0;
+  padding:0;
+  float: right;
+  height: 730px;
+}
+#picture
+{
+  float:right;
+}
+.footerDiv
+{
+  border-style:ridge;
+  text-align:center;
+}
