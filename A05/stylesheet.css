@@ -1,0 +1,77 @@
+#pacific
+{
+  background-color: deepskyblue;
+}
+#atlantic
+{
+  background-color: #4c95aa;
+}
+#indian
+{
+  background-color:seagreen;
+}
+#form
+{
+  background-color: aquamarine;
+}
+
+.header
+{
+  border-style: ridge;
+  border-color: aqua;
+  text-align: center;
+  font-size: 100px;
+  color: darkblue;
+  font-weight: bold;
+  height: 158px;
+}
+
+.sidebar
+{
+  width: 25%;
+  float: left;
+  border-style: ridge;
+  border-color: aqua;
+  color: darkblue;
+  height: 370px;
+}
+
+.title
+{
+  font-weight: bold;
+  font-size: 30px;
+}
+.nav
+{
+  height: 50px;
+  border-style: ridge;
+  border-color: aqua;
+  text-align: center;
+  font-size: 30px;
+}
+.content
+{
+  width:74.1%;
+  float: right;
+  border-style: ridge;
+  border-color: aqua;
+  align: center;
+  height:370px;
+}
+
+.image
+{
+  height:340px;
+  max-width: 74.1%;
+}
+
+
+
+.footer
+{
+  height: 50px;
+  border-style: ridge;
+  border-color: aqua;
+  clear: both;
+  text-align: center;
+}
