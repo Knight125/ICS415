@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/ICS415/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/ICS415/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+  <div class="container-fluid">
+
+    <div class = "row">
+      <div class="col-sm-12">
+        <div class="page-header">
+          <h1 class = "header">Your Journey is Only Beginning</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class = "col-sm-12" id = "navigation">
+      <ul class="nav nav-tabs" >
+        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+        <li class = "page2"><a data-toggle="tab" href="#page2">Cruising</a></li>
+        <li class = "page3"><a data-toggle="tab" href="#page3">Flights</a></li>
+      </ul>
+      </div>
+    </div>
+
+      <div class = "row">
+        <div class = "col-sm-12">
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <div class = "row" id>
+                <div class="col-sm-3" id = "summary1">
+                 <h1> Knight Travel Inc</h1>
+                  <br>
+                  <h3>Proudly serving customers since 2015</h3>
+                  <br>
+                  <h5>We are proud to present our new website about traveling as for cheap:</h5>
+                  <br>
+                  Please navigate through the tabs to see different options depending on your mode of travel
+                </div>
+                <div class="col-sm-9" id ="content1">
+                  Our Team:
+                  <br>
+                  <div class="thumbnail" >
+                    <img src = "Our-Team.jpg"></div>
+                </div>
+              </div>
+            </div>
+            <div id="page2" class="tab-pane fade">
+              <div class = "row" id>
+                <div class="col-sm-3" id = "summary2">
+                  <h1> Knight Travel Inc</h1>
+                  <br>
+                  <h3>Proudly serving customers since 2015</h3>
+                  <br>
+                  <h5>We are proud to present our new website about traveling as for cheap:</h5>
+                  <br>
+                  Please navigate through the tabs to see different options depending on your mode of travel
+                </div>
+                <div class="col-sm-9" id ="content2">
+                  We are proud to present our new website about traveling as for cheap:
+                  <br>
+                  Click the button below to go to the site the finds the cheapest cruise deals
+                  <br>
+                  <button type="button" onclick="myFunction()" class="btn">Cheap Cruises</button>
+                  <p id="demo"></p>
+                </div>
+              </div>
+            </div>
+            <div id="page3" class="tab-pane fade">
+              <div class = "row" id = middle>
+                <div class="col-sm-3" id = "summary">
+                  <h1> Knight Travel Inc</h1>
+                  <br>
+                  <h3>Proudly serving customers since 2015</h3>
+                  <br>
+                  <h5>We are proud to present our new website about traveling as for cheap:</h5>
+                  <br>
+                  Please navigate through the tabs to see different options depending on your mode of travel
+                </div>
+                <div class="col-sm-9" id ="content" onmouseover = "changeColor()" onmouseout = "changeColorBack()">
+                  <script>
+                    function changeColor()
+                    {
+                      console.log(document.getElementById("middle"));
+                      document.getElementById("middle").style.background = "rgba(255,0,0)";
+                    }
+                    function changeColorBack()
+                    {
+                      console.log(document.getElementById("middle"));
+                      document.getElementById("middle").style.background = "rgba(135,206,250)";
+                    }
+                  </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "row">
+          <div class = "col-sm-12">
+            <div class="footer">
+              <p>Copyright (c) 2015</p>
+            </div>
+          </div>
+      </div>
+
+  </div>
+  </div>
+<script>
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "This Link is Broken";
+  }
+
+</script>
+</body>
+</html>
