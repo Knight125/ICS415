@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>form</title>
+  <link rel="stylesheet" href="/ICS415/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="myScript.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="col-xs-12" id = "outside">
+    <div id = "letter">
+        Dear Sir,<br>
+        I am a Nigerian prince attempting to move a 50 million USD to America. <br>
+        My uncle is after my life,. and I must flee to America and I need your help. <br>
+        If you fill out the form beelow with the user name and password to your <br>
+        online bank account, I give you half the money. <br>
+        Yours Faithfully,<br>
+        Dr. James Akhmed<br>
+    </div>
+    <p id = "error"></p>
+    <form name="myForm" class = "form-vertical" action="demo_form.html" onsubmit="return validateForm()" method="get">
+      <div class="form-group">
+        <label for="username">User name: </label>
+        <input type="text" name="name" id="username">
+      </div>
+      <div class="form-group">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+      </div>
+      <div class="form-group">
+        <label for="confirm">Confirm Password: </label>
+        <input type="password" name="confirm" id="confirm">
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+</body>
+</html>
