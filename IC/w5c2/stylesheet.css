@@ -1,0 +1,70 @@
+
+body
+{
+  background-image: url("background-site.jpg");
+  text-align: center;
+  color:white;
+  border-color: white;
+  border-width: 0.1em;
+}
+.page-header
+{
+  height: 8em;
+
+}
+#show
+{
+  color: #080808;
+}
+#hide
+{
+  color: #080808;
+}
+.row
+{
+  background: rgba(0,0,0,.3);
+}
+.header
+{
+  font-size: 5em;
+}
+
+.footer
+{
+  height: 50px;
+  border-style: solid;
+}
+.btn
+{
+  color: black;
+}
+
+#summary
+{
+  border-style: solid;
+  border-left: hidden;
+  border-top: hidden;
+  border-bottom:hidden;
+  height: 382px;
+}
+#summary1
+{
+  border-style: solid;
+  border-left: hidden;
+  border-top: hidden;
+  border-bottom:hidden;
+  height: 382px;
+}
+#summary2
+{
+  border-style: solid;
+  border-left: hidden;
+  border-top: hidden;
+  border-bottom:hidden;
+  height: 382px;
+}
+
+#navigation
+{
+  height: 50px;
+}
