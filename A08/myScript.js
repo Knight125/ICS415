@@ -20,8 +20,13 @@
 
 $(document).ready(function(){
   $("#button").click(function(){
-    $.get("FAQ.html", function(data, status){
-      var num = occurrences(data, "link");
+    url = $('#urlInfo').val();
+    $.get(url, function(data, status){
+      var num = 0;
+     if(occurrences(data, "link") > 0)
+     {
+       num = occurrences(data, "link");
+     }
 
       $("#result").html(num);
     });
